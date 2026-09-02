@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday Ephram Gultom</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: white;
+            border-radius: 30px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        /* HALAMAN AWAL */
+
+        #awal {
+            display: block;
+        }
+
+        .kado {
+            font-size: 100px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .kado:hover {
+            transform: scale(1.15);
+        }
+
+        h1 {
+            color: #764ba2;
+            margin: 15px 0;
+        }
+
+        .teks-awal {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        button {
+            border: none;
+            padding: 14px 28px;
+            border-radius: 30px;
+            background: #764ba2;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #5a3780;
+            transform: scale(1.05);
+        }
+
+        /* HALAMAN UCAPAN */
+
+        #ucapan {
+            display: none;
+        }
+
+        .foto {
+            width: 210px;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 7px solid #764ba2;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+            margin-bottom: 20px;
+        }
+
+        .judul {
+            font-size: 30px;
+            color: #764ba2;
+        }
+
+        .nama {
+            font-size: 28px;
+            color: #ff4f81;
+            margin: 10px 0 20px;
+        }
+
+        .surat {
+            background: #f7f1ff;
+            padding: 25px;
+            border-radius: 20px;
+            text-align: left;
+            line-height: 1.8;
+            color: #444;
+            font-size: 17px;
+        }
+
+        .penutup {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        .emoji {
+            font-size: 35px;
+            margin-top: 20px;
+        }
+
+        /* CONFETTI */
+
+        .confetti {
+            position: fixed;
+            top: -30px;
+            font-size: 25px;
+            animation: jatuh 4s linear forwards;
+            pointer-events: none;
+        }
+
+        @keyframes jatuh {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            100% {
+                transform: translateY(110vh) rotate(720deg);
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HALAMAN PERTAMA -->
+
+        <div id="awal">
+
+            <div class="kado" onclick="bukaUcapan()">
+                🎁
+            </div>
+
+            <h1>ADA KEJUTAN UNTUKMU! 🎉</h1>
+
+            <p class="teks-awal">
+                Hari ini bukan hari biasa...
+                <br>
+                Ada seseorang yang sedang merayakan
+                hari yang spesial. ❤️
+                <br><br>
+                Klik tombol di bawah untuk melihat
+                kejutannya!
+            </p>
+
+            <button onclick="bukaUcapan()">
+                🎁 BUKA KEJUTAN
+            </button>
+
+        </div>
+
+
+        <!-- HALAMAN KEDUA -->
+
+        <div id="ucapan">
+
+            <img src="ephram.jpg" class="foto" alt="Foto Ephram">
+
+            <div class="judul">
+                🎂 HAPPY BIRTHDAY 🎂
+            </div>
+
+            <div class="nama">
+                EPHRAM GULTOM
+            </div>
+
+            <div class="surat">
+
+                <p>
+                    Untuk <b>Bang Ephram Gultom</b> ❤️
+                </p>
+
+                <br>
+
+                <p>
+                    Selamat ulang tahun! 🎉
+                </p>
+
+                <p>
+                    Hari ini adalah hari yang spesial,
+                    karena hari ini adalah hari kelahiranmu.
+                    Semoga dengan bertambahnya usia abang membawa
+                    semakin banyak kebahagiaan dan
+                    pengalaman yang indah.
+                </p>
+
+                <br>
+
+                <p>
+                    Semoga abang selalu di berkati tuhan diberikan
+                    kesehatan, kebahagiaan, kesuksesan dalam studinya,
+                    dan panjang umur.
+                </p>
+
+                <br>
+
+                <p>
+                    Jangan takut untuk bermimpi besar.
+                    Tetap semangat, setia pada panggilan dan pelayanannya, 
+                    dan tetap mengandalkan tuhan ✨
+                </p>
+
+                <br>
+
+                <p>
+                    Semoga setiap langkah abang ke depannya
+                    dipenuhi dengan hal-hal baik dan orang-orang
+                    yang selalu mendukung abang.
+                </p>
+
+                <br>
+
+                <p>
+                    Sekali lagi...
+                    <br>
+                    <b>SELAMAT ULANG TAHUN,BANG EPHRAM 🎂🎉</b>
+                </p>
+
+            </div>
+
+            <div class="penutup">
+                Semoga hari ini penuh kebahagiaan ❤️
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function bukaUcapan() {
+
+            // Hilangkan halaman awal
+            document.getElementById("awal").style.display = "none";
+
+            // Tampilkan halaman ucapan
+            document.getElementById("ucapan").style.display = "block";
+
+            // Membuat confetti
+            for (let i = 0; i < 70; i++) {
+
+                let confetti =
+                    document.createElement("div");
+
+                confetti.className = "confetti";
+
+                let daftarEmoji = [
+                    "🎉",
+                    "🎊",
+                    "🎈",
+                    "❤️",
+                    "✨",
+                    "⭐",
+                    "🥳",
+                    "🎂"
+                ];
+
+                confetti.innerHTML =
+                    daftarEmoji[
+                        Math.floor(
+                            Math.random() *
+                            daftarEmoji.length
+                        )
+                    ];
+
+                confetti.style.left =
+                    Math.random() * 100 + "vw";
+
+                confetti.style.animationDuration =
+                    Math.random() * 2 + 2 + "s";
+
+                document.body.appendChild(confetti);
+
+                setTimeout(function() {
+                    confetti.remove();
+                }, 5000);
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
